@@ -45,6 +45,7 @@ set(CLOUD_PROFILER_SRC_FILES
 if(CP_STATIC_BUILD)
   add_library(cloud_profiler_static STATIC ${CLOUD_PROFILER_SRC_FILES})
 endif(CP_STATIC_BUILD)
+// FIXME: target_include_directories
 
 set(CMAKE_SWIG_OUTDIR ${CMAKE_CURRENT_BINARY_DIR}/cp/swig)
 include_directories(./)
